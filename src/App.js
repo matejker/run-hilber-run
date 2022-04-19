@@ -76,7 +76,8 @@ export default function App() {
         It quickly became a hot topic picked up with math superstars such as Hilbert, Peano and Moore [1, 2].</p>
 
         <h2 id="hilbert">Hilbert Curve</h2>
-        <p>First and most popular curve type is Hilbert Curve, which divides the area into four equal subquadrands in
+        <p>First and most popular curve type is Hilbert Curve<sup><a href="#hilbert-bio">3)</a></sup>, which divides
+        the area into four equal subquadrands in
         each step and connects the middle point of each quadrant. In the first iteration, a single inverted “U”
         shape is drawn. In the second, each of the quadrants is splitted into four new smaller ones and the original
         “U” shape is being rotated or flipped in each quadrant. However the original shape is used in every iteration,
@@ -98,7 +99,7 @@ export default function App() {
         <div className="center"><img src={ vectors } alt="Vectors" width="500" /></div>
 
         <p>However, the SFC are fractals - one shape being used in a rotated or flipped way, we can represent each
-        of those transformations as rotational matrices <sup><a href="#transform-group">3)</a></sup>. In addition as in each iteration the sub curves are shifted
+        of those transformations as rotational matrices <sup><a href="#transform-group">4)</a></sup>. In addition as in each iteration the sub curves are shifted
         into four new corners and scaled down by ½ factor. [2]</p>
         <ul>
         <BlockMath>{`H_0 =
@@ -485,8 +486,21 @@ export default function App() {
             </li>
             <li id="strava">
                 Hilbert and Peano curve runs in San Diego downtown. <br />
-                <img src={ hilbert_strava } alt="Hilbert curve on Strava" className="strava" />
-                <img src={ peano_strava } alt="Peano curve on Strava" className="strava" />
+                <a href="https://www.strava.com/activities/6964774395">
+                    <img src={ hilbert_strava } alt="Hilbert curve on Strava" className="strava" />
+                </a>
+                <a href="https://www.strava.com/activities/6970087088">
+                    <img src={ peano_strava } alt="Peano curve on Strava" className="strava" />
+                </a>
+            </li>
+            <li id="hilbert-bio">
+                David Hilbert was one of the greatest mathematician of the 19<sup>th</sup> and 20<sup>th</sup> centuries.
+                He worked on wide spectrum of problems in algebra, calculus, functional analysis, geometry...
+                and foundations of mathematics - specially theory of proofs, which led to
+                foundational crisis of mathematics or <em>Grundlagenkrise der Mathematik</em>. This project is a tribute
+                to this great mathematician and one of his at least visually appealing contributions.
+
+                <a href="https://en.wikipedia.org/wiki/David_Hilbert">Wikipedia</a>
             </li>
             <li id="transform-group">
                 <p>The rotation matrices of the affine transformations forms a group. Specifically matrices: </p>
@@ -503,7 +517,10 @@ export default function App() {
                 and five cyclic subgroups of order two: &lt;U<sub>I</sub>,U<sub>R</sub>&gt;,
                 &lt;U<sub>I</sub>,U<sub>-R</sub>&gt;,
                 &lt;U<sub>I</sub>,U<sub>-I</sub>&gt;,
-                &lt;U<sub>I</sub>,U<sub>-H</sub>&gt;. More details in [3].</p>
+                &lt;U<sub>I</sub>,U<sub>-H</sub>&gt;.</p>
+
+                <p>Interestingly, with a right combinations of those subgroups several other Hilbert curves can be formed
+                 in 2D, see more details in E. Estevez-Rams, et al. paper <em>"Hilbert curves in two dimensions"</em> [3]</p>
             </li>
         </ol>
     </div>
