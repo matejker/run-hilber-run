@@ -2,6 +2,8 @@ import React from 'react';
 import 'katex/dist/katex.min.css';
 import vectors from './img/vectors.png';
 import github from './img/github.png';
+import hilbert_strava from './img/hilbert_strava.png';
+import peano_strava from './img/peano_strava.png';
 import { InlineMath, BlockMath } from 'react-katex';
 import MOORE_DIEGO from './routes/moore-diego';
 import HILBERT_DIEGO from './routes/hilbert-diego';
@@ -38,13 +40,13 @@ export default function App() {
         the city center. I called it turbo-tourism.</p>
 
         <p>My first trip to a novel place, after the pandemic ended<sup><a href="#covid">1)</a></sup>,
-        was to San Diego, California. However, as a person who grew up and lived in various European
+        was to San Diego, California <sup><a href="#strava">2)</a></sup>. However, as a person who grew up and lived in various European
         cities which all have this organic onion-looking street structure, I am amazed with US grid street plans and
         how the straight street lines are enforced on the natural landscape of the city area.</p>
 
         <p>In my previous project, I looked on the <a href="http://www.everystreetchallenge.com/">#everystreet challenge</a> and
         how to visit every street of a given
-        metropolitan area. While visiting every single street provides a detailed image of some area, it
+        metropolitan area. While visiting every single street provides a detailed image of some area, but it
         requires <em>lots</em> of time and energy to do it.</p>
 
         <h2 id="dots">Connecting dots</h2>
@@ -63,10 +65,10 @@ export default function App() {
         dimensional curves which could fill an entire space. The formal definition says:</p>
 
         <p>
-            <strong>Definition:</strong> A curve is a continuous function on interval [0, 1]. Let
-            <InlineMath>{`C: [0,1] \\rightarrow R^n`}</InlineMath> be a curve. When the curve’s image C([0, 1])
+            <strong>Definition:</strong> A curve <InlineMath>{`C: [0,1] \\rightarrow R^n`}</InlineMath> is a continuous
+            function on interval [0, 1].  When the curve’s image C([0, 1])
             has <a href="https://en.wikipedia.org/wiki/Jordan_measure">Jordan content</a> larger than 0, it is called
-            a <em>Space-Filling Curve </em>(SFC).
+            a <em>Space-Filling Curve </em> (SFC).
         </p>
 
         <p>In other words, it means that a one dimensional object can fill a two or more dimensional object.
@@ -96,7 +98,7 @@ export default function App() {
         <div className="center"><img src={ vectors } alt="Vectors" width="500" /></div>
 
         <p>However, the SFC are fractals - one shape being used in a rotated or flipped way, we can represent each
-        of those transformations as rotational matrices. In addition as in each iteration the sub curves are shifted
+        of those transformations as rotational matrices <sup><a href="#transform-group">3)</a></sup>. In addition as in each iteration the sub curves are shifted
         into four new corners and scaled down by ½ factor. [2]</p>
         <ul>
         <BlockMath>{`H_0 =
@@ -180,7 +182,7 @@ export default function App() {
         <li>Forth one is rotated by 90° to the left</li>
         </ul>
 
-        <p>Putting it all together, the parametrization of Hilbert curve with the rotational ans shifting operations
+        <p>Putting it all together, the parametrization of Hilbert curve with the rotational and shifting operations
         H<sub>0</sub>, H<sub>1</sub>, H<sub>2</sub> and H<sub>3</sub> is a limit of an infinite matrix product.</p>
 
         <BlockMath>{`h(t) = \\lim_{n \\to \\infty}h(0_4.q_1q_2...q_n) =
@@ -480,6 +482,28 @@ export default function App() {
         <ol className="foot-notes">
             <li id="covid">
                 Ok, it didn’t end, we just stopped caring about it anymore
+            </li>
+            <li id="strava">
+                Hilbert and Peano curve runs in San Diego downtown. <br />
+                <img src={ hilbert_strava } alt="Hilbert curve on Strava" className="strava" />
+                <img src={ peano_strava } alt="Peano curve on Strava" className="strava" />
+            </li>
+            <li id="transform-group">
+                <p>The rotation matrices of the affine transformations forms a group. Specifically matrices: </p>
+
+                <InlineMath>{`U_I = \\begin{pmatrix}1 & 0 \\\\ 0 & 1 \\\\ \\end{pmatrix}`}</InlineMath>, &nbsp;
+                <InlineMath>{`U_R = \\begin{pmatrix}0 & 1 \\\\ 1 & 0 \\\\ \\end{pmatrix}`}</InlineMath>, &nbsp;
+                <InlineMath>{`U_V = \\begin{pmatrix}0 & -1 \\\\ 1 & 0 \\\\ \\end{pmatrix}`}</InlineMath> and &nbsp;
+                <InlineMath>{`U_H = \\begin{pmatrix}1 & 0 \\\\ 0 & -1 \\\\ \\end{pmatrix}`}</InlineMath> &nbsp;
+
+                <p>With a generator &lt;U<sub>R</sub>,U<sub>H</sub>&gt;. It has three subgroups of order four:
+                &lt;U<sub>I</sub>,U<sub>-I</sub>,U<sub>R</sub>,U<sub>-R</sub>&gt;,
+                &lt;U<sub>I</sub>,U<sub>-I</sub>,U<sub>H</sub>,U<sub>-H</sub>&gt; and
+                &lt;U<sub>I</sub>,U<sub>-I</sub>,U<sub>V</sub>,U<sub>-V</sub>&gt;,
+                and five cyclic subgroups of order two: &lt;U<sub>I</sub>,U<sub>R</sub>&gt;,
+                &lt;U<sub>I</sub>,U<sub>-R</sub>&gt;,
+                &lt;U<sub>I</sub>,U<sub>-I</sub>&gt;,
+                &lt;U<sub>I</sub>,U<sub>-H</sub>&gt;. More details in [3].</p>
             </li>
         </ol>
     </div>

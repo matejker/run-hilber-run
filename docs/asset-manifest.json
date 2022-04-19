@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/run-hilbert-run/static/css/main.a31651da.css",
-    "main.js": "/run-hilbert-run/static/js/main.86acf4b5.js",
+    "main.css": "/run-hilbert-run/static/css/main.fec39985.css",
+    "main.js": "/run-hilbert-run/static/js/main.c80565df.js",
+    "static/media/peano_strava.png": "/run-hilbert-run/static/media/peano_strava.9b83a408ed9970c02e2a.png",
+    "static/media/hilbert_strava.png": "/run-hilbert-run/static/media/hilbert_strava.a2657adbc6bbb3553db6.png",
     "static/media/KaTeX_AMS-Regular.ttf": "/run-hilbert-run/static/media/KaTeX_AMS-Regular.797708391f0380251e6c.ttf",
     "static/media/KaTeX_Main-Regular.ttf": "/run-hilbert-run/static/media/KaTeX_Main-Regular.c13710b121e1ae9a9d2f.ttf",
     "static/media/KaTeX_Main-Bold.ttf": "/run-hilbert-run/static/media/KaTeX_Main-Bold.741b6dafa705c6d25b25.ttf",
@@ -62,11 +64,11 @@
     "static/media/KaTeX_Size3-Regular.woff": "/run-hilbert-run/static/media/KaTeX_Size3-Regular.d27d182ea833ec6cc72e.woff",
     "static/media/KaTeX_Size3-Regular.woff2": "/run-hilbert-run/static/media/KaTeX_Size3-Regular.943a01ec6dae1a54fa8b.woff2",
     "index.html": "/run-hilbert-run/index.html",
-    "main.a31651da.css.map": "/run-hilbert-run/static/css/main.a31651da.css.map",
-    "main.86acf4b5.js.map": "/run-hilbert-run/static/js/main.86acf4b5.js.map"
+    "main.fec39985.css.map": "/run-hilbert-run/static/css/main.fec39985.css.map",
+    "main.c80565df.js.map": "/run-hilbert-run/static/js/main.c80565df.js.map"
   },
   "entrypoints": [
-    "static/css/main.a31651da.css",
-    "static/js/main.86acf4b5.js"
+    "static/css/main.fec39985.css",
+    "static/js/main.c80565df.js"
   ]
 }
