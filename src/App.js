@@ -496,11 +496,11 @@ export default function App() {
             <li id="hilbert-bio">
                 David Hilbert was one of the greatest mathematician of the 19<sup>th</sup> and 20<sup>th</sup> centuries.
                 He worked on wide spectrum of problems in algebra, calculus, functional analysis, geometry...
-                and foundations of mathematics - specially theory of proofs, which led to
+                and on foundations of mathematics - specially theory of proofs, which led to the
                 foundational crisis of mathematics or <em>Grundlagenkrise der Mathematik</em>. This project is a tribute
                 to this great mathematician and one of his at least visually appealing contributions.
 
-                <a href="https://en.wikipedia.org/wiki/David_Hilbert">Wikipedia</a>
+                &nbsp;<a href="https://en.wikipedia.org/wiki/David_Hilbert">Wikipedia</a>
             </li>
             <li id="transform-group">
                 <p>The rotation matrices of the affine transformations forms a group. Specifically matrices: </p>
