@@ -275,7 +275,7 @@ export default function App() {
         first rotations are different and then the sub curves are Hilbert. Therefore, further iterations are copying
         the Hilbert arithmetic and the final parametrization looks:</p>
 
-        <BlockMath>{`m(t) = \\lim_{n \\to \\infty}h(0_4.q_1q_2...q_n) =
+        <BlockMath>{`m(t) = \\lim_{n \\to \\infty}m(0_4.q_1q_2...q_n) =
         \\lim_{n \\to \\infty} M_{q_1} \\circ H_{q_2} \\circ \\dots \\circ H_{q_n}\\begin{pmatrix}
         0 \\\\
         0 \\\\
@@ -344,7 +344,7 @@ export default function App() {
         <BlockMath>{`P_3 =
         \\begin{pmatrix}
         \\frac{1}{3} & 0 \\\\
-        0 & -0\\frac{1}{3} \\\\
+        0 & -\\frac{1}{3} \\\\
         \\end{pmatrix}
         \\begin{pmatrix}
         x \\\\
@@ -450,7 +450,7 @@ export default function App() {
         \\end{pmatrix}`}</BlockMath>
 
         <p>Parametrization for Peano Curve p(t), bear in mind that we are now in base 9 unlike in previous cases:</p>
-        <BlockMath>{`p(t) = \\lim_{n \\to \\infty}h(0_9.q_1q_2...q_n) =
+        <BlockMath>{`p(t) = \\lim_{n \\to \\infty}p(0_9.q_1q_2...q_n) =
         \\lim_{n \\to \\infty} P_{q_1} \\circ P_{q_2} \\circ \\dots \\circ P_{q_n}\\begin{pmatrix}
         0 \\\\
         0 \\\\

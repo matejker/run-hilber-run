@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/run-hilbert-run/static/css/main.ae33d76a.css",
-    "main.js": "/run-hilbert-run/static/js/main.ca160757.js",
+    "main.js": "/run-hilbert-run/static/js/main.b0c87439.js",
     "static/media/peano_strava.png": "/run-hilbert-run/static/media/peano_strava.9b83a408ed9970c02e2a.png",
     "static/media/hilbert_strava.png": "/run-hilbert-run/static/media/hilbert_strava.a2657adbc6bbb3553db6.png",
     "static/media/KaTeX_AMS-Regular.ttf": "/run-hilbert-run/static/media/KaTeX_AMS-Regular.797708391f0380251e6c.ttf",
@@ -65,10 +65,10 @@
     "static/media/KaTeX_Size3-Regular.woff2": "/run-hilbert-run/static/media/KaTeX_Size3-Regular.943a01ec6dae1a54fa8b.woff2",
     "index.html": "/run-hilbert-run/index.html",
     "main.ae33d76a.css.map": "/run-hilbert-run/static/css/main.ae33d76a.css.map",
-    "main.ca160757.js.map": "/run-hilbert-run/static/js/main.ca160757.js.map"
+    "main.b0c87439.js.map": "/run-hilbert-run/static/js/main.b0c87439.js.map"
   },
   "entrypoints": [
     "static/css/main.ae33d76a.css",
-    "static/js/main.ca160757.js"
+    "static/js/main.b0c87439.js"
   ]
 }
